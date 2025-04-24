@@ -1,0 +1,102 @@
+/*Essa parte referincia a tudo do código para cada tag será passada esses valores*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*Vai pegar os valores padding e o margin adicionados e aplicara em em toda a página, apenas nas bordas */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+:root{
+    --btn-login: #3C2F2F ;
+    --border-btn-cadastro: #3c2f2fd8;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    background: #EEDDCC;
+    z-index: 2;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+}
+
+.links ul {
+    list-style: none;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.links ul .agora li a {
+    color: #AB8E7F;
+}
+
+.div_bnt {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.links ul li:hover {
+    border-bottom: 1px solid var(--btn-login);
+}
+
+.btn_cadastro,
+.btn_login {
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #EEDDCC;
+}
+
+.btn_cadastro:hover,
+.btn_login:hover {
+    color: #EEDDCC;
+    background-color: #8B6E5A;
+}
+
+.btn_cadastro {
+    border: 1px solid var(--border-btn-cadastro);
+    background: transparent;
+    color: var(--border-btn-cadastro);
+    font-weight: bolder;
+}
+
+.btn_login {
+    font-weight: bolder;
+    background: var(--btn-login);
+}
+.navbar .logo{
+    background-image: url(../images/logos/logo-oficial-preta.png);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .conjunto-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+}
+
+/*Fim da parte de navegação navbar*/

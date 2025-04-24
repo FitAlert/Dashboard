@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.conteudoDash {
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #706c5a;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all .5s;
+    min-width: 82px;
+    z-index: 2;
+}
+
+#sidebar_content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.user_avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.side-item.active {
+    background-color: #715f41;
+}
+
+.side-item:hover:not(.active),
+#btnLogout:hover {
+    background-color: #bca771;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5eeee;
+}
+
+.side-item.active a {
+    color: #e3e9f7;
+}
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+#logout {
+    border-top: 1px solid #e3e9f7;
+    padding: 12px;
+}
+
+#btnLogout {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#btnAbrir {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #9c6c4b;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*Menu hamburgue*/
+.menu-btn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .btn-line {
+    width: 27px;
+    height: 4px;
+    background-color: black;
+    transition: all 0.3s ease;
+    margin-bottom: 4px;
+  }
+  
+  .menu-btn.active .btn-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-btn.active .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-btn.active .btn-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .menu {
+    width: 300px;
+    display: none;
+    position: absolute;
+    left:11%;
+    border-radius: 5px;
+    padding: 10px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    background: #706c5a;
+  }
+  
+  .menu.active {
+    display: flex;
+    transition-duration: 0.3s ;
+  }
+  
+  .menu ul {
+    height: 60vh;
+    list-style-type: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .menu ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background: #302f2f;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu ul li a:hover {
+    color: #ffffff;
+  }
+  
+
+
